@@ -1,33 +1,33 @@
 var mainApp = angular.module('mainApp', []);
 
-// mainApp.controller('myCtrl', function($scope, $http){
-//
-//   // $http get from API, based on which character you click
-//   // ng-click / ng-show
-//   // separate gets for each character?
-//
-//
-//
-// });
+mainApp.controller('tabController', function ($scope, $http) {
 
-mainApp.controller('tabController', function ($scope) {
   $scope.tab = function (tabId) {
-    if (tabId === 1) {
+
+    $http({
+      method: 'GET',
+      url: 'http://anapioficeandfire.com/api/characters/' + tabId
+    }).then(function successCallback(response) {
+      console.log(response);
+      $scope.charinfo = response.data;
+    });
+
+    if (tabId === 827) {
       console.log("Podrick!")
     }
-    if (tabId === 2) {
+    if (tabId === 583) {
       console.log("Jon!")
     }
-    if (tabId === 3) {
+    if (tabId === 1303) {
       console.log("Daenerys!")
     }
-    if (tabId === 4) {
+    if (tabId === 1319) {
       console.log("Davos!")
     }
-    if (tabId === 5) {
+    if (tabId === 148) {
       console.log("Arya!")
     }
-    if (tabId === 6) {
+    if (tabId === 1052) {
       console.log("Tyrion!")
     }
   };

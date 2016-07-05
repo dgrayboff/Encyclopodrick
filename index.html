@@ -9,25 +9,27 @@
     <title>GoT Encyclopodrick</title>
   </head>
   <body>
-    <div id = "container" ng-app="mainApp">
+    <div id = "container" ng-app="mainApp" ng-controller="tabController">
       <header class="mainheader"> GAME OF THRONES </header>
       <header class="secondheader"> Encyclopodrick </header>
 
-        <div class="tabs" ng-controller="tabController">
+        <div class="tabs">
           <h2> Select a Character: </h2>
           <ul>
-          <li><a href="#" class="podrick" ng-click="tab(1)">Podrick</a></li>
-          <li><a href="#" class="jon" ng-click="tab(2)">Jon</a></li>
-          <li><a href="#" class="dany" ng-click="tab(3)">Daenerys</a></li>
-          <li><a href="#" class="davos" ng-click="tab(4)">Davos</a></li>
-          <li><a href="#" class="arya" ng-click="tab(5)">Arya</a></li>
-          <li><a href="#" class="tyrion" ng-click="tab(6)">Tyrion</a></li>
+          <li><a href="#" class="podrick" ng-click="tab(827)">Podrick</a></li>
+          <li><a href="#" class="jon" ng-click="tab(583)">Jon</a></li>
+          <li><a href="#" class="dany" ng-click="tab(1303)">Daenerys</a></li>
+          <li><a href="#" class="davos" ng-click="tab(1319)">Davos</a></li>
+          <li><a href="#" class="arya" ng-click="tab(148)">Arya</a></li>
+          <li><a href="#" class="tyrion" ng-click="tab(1052)">Tyrion</a></li>
         </ul>
         </div>
 
         <div class="about">
           <img src="#"></img>
-          <p>All about this character</p>
+          <p>Name: {{charinfo.name}}</p>
+          <p>Titles/Nicknames: {{charinfo.aliases}}</p>
+          <p>
         </div>
 
     </div>
