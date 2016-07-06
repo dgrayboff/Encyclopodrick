@@ -26,9 +26,9 @@
         </div>
 
         <div class="about">
-          <img src="#"></img>
-          <p>Name: {{charinfo.name}}</p>
-          <p>Titles/Nicknames: {{charinfo.aliases}}</p>
+          <img class="infoimg" ng-show="hideInfo" ng-src="{{charimage}}"></img>
+          <p ng-show="hideInfo">Name: {{charinfo.name}}</p>
+          <p ng-show="hideInfo">A.k.a/Titles: {{chartitles[0]}}, {{chartitles[1]}}, {{chartitles[2]}}, {{chartitles[3]}}, {{chartitles[4]}}, {{chartitles[5]}}</p>
           <p>
         </div>
 

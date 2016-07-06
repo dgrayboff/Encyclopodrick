@@ -79,8 +79,8 @@ li a:hover {
 .about {
   display: inline-block;
   vertical-align: top;
-  margin-top: 4em;
-  border: 1.75px solid $red;
+  margin-top: 3.5%;
+  // border: 1.75px solid $red;
   border-radius: 3px;
   height: 17em;
   width: 60%;
@@ -90,4 +90,12 @@ li a:hover {
 
 p {
   line-height: 1.5;
+  padding: 5px;
+}
+
+.infoimg{
+  height: 75%;
+  width: auto;
+  margin: 0 auto;
+  border-radius: 3px;
 }
