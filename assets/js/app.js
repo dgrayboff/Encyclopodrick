@@ -6,7 +6,7 @@ mainApp.controller('tabController', function ($scope, $http) {
 
     $http({
       method: 'GET',
-      url: 'http://anapioficeandfire.com/api/characters/' + tabId
+      url: 'https://anapioficeandfire.com/api/characters/' + tabId
     }).then(function successCallback(response) {
       console.log(response);
       $scope.charinfo = response.data;
