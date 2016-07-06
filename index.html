@@ -26,10 +26,12 @@
         </div>
 
         <div class="about">
+          <img class="homeimg" ng-hide="hideMain" ng-src="http://fastdecals.com/shop/images/detailed/14/targaryensigils02_misc.jpg?t=1434622805">
           <img class="infoimg" ng-show="hideInfo" ng-src="{{charimage}}"></img>
-          <p ng-show="hideInfo">Name: {{charinfo.name}}</p>
-          <p ng-show="hideInfo">A.k.a/Titles: {{chartitles[0]}}, {{chartitles[1]}}, {{chartitles[2]}}, {{chartitles[3]}}, {{chartitles[4]}}, {{chartitles[5]}}</p>
-          <p>
+          <p ng-show="hideInfo"><span class="moreinfo">Name</span>: {{charinfo.name}}</p>
+          <p ng-show="hideInfo"><span class="moreinfo">Born</span>: {{charinfo.born}}</p>
+          <p ng-show="hideInfo"><span class="moreinfo">Aliases</span>: {{chartitles[0]}}, {{chartitles[1]}}, {{chartitles[2]}}, {{chartitles[3]}}, {{chartitles[4]}}, {{chartitles[5]}}</p>
+          <p ng-show="hideInfo"><span class="moreinfo">Played By</span>: {{charinfo.playedBy[0]}}</p>
         </div>
 
     </div>

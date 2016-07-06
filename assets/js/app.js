@@ -18,7 +18,7 @@ mainApp.controller('tabController', function ($scope, $http) {
       // }
     })
 
-
+    $scope.hideMain = true;
     $scope.hideInfo = true;
 
     if (tabId === 827) {

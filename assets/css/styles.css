@@ -6,7 +6,7 @@ body {
   margin: 0 auto; }
 
 header {
-  font-size: 36px;
+  font-size: 40px;
   color: #8B0000;
   font-weight: bold;
   text-align: center;
@@ -26,7 +26,8 @@ header {
 h2 {
   text-align: center;
   display: block;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 18px; }
 
 .tabs {
   padding: 1em;
@@ -41,18 +42,19 @@ li {
   text-align: center; }
 
 a {
-  padding: 10px 15px;
+  padding: 12px 17px;
   text-decoration: none;
   border-radius: 3px;
   margin: 0 auto;
   text-align: center;
   color: #fff;
   background-color: #8B0000;
-  vertical-align: middle; }
+  vertical-align: middle;
+  font-size: 20px; }
 
 li a {
   display: block;
-  width: 65px;
+  width: 70px;
   margin-top: 1em; }
 
 li a:hover {
@@ -71,12 +73,24 @@ li a:hover {
 
 p {
   line-height: 1.5;
-  padding: 5px; }
+  padding: 5px;
+  font-weight: bold;
+  font-size: 18px; }
+
+.homeimg {
+  height: 375px;
+  width: auto;
+  margin-left: 25px;
+  display: block; }
 
 .infoimg {
-  height: 75%;
+  height: 80%;
   width: auto;
   margin: 0 auto;
-  border-radius: 3px; }
+  border-radius: 3px;
+  margin-bottom: 10px; }
+
+.moreinfo {
+  text-decoration: underline; }
 
 /*# sourceMappingURL=styles.css.map */
