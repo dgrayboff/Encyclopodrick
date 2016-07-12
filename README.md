@@ -1,4 +1,4 @@
-# wittyAngularAppName_2.0
+# Encyclopodrick
 
 Game of Thrones: Encyclopodrick
 
